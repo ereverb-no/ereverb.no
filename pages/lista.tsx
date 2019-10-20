@@ -18,7 +18,7 @@ const Index = () => (
       <div>
         {words.map(item =>
           <div className='row'>
-            <a href='https://ordbok.uib.no/perl/ordbok.cgi?OPP=administrere' className='card'>
+            <a href={`https://ordbok.uib.no/perl/ordbok.cgi?OPP=${item.word}`} className='card'>
               <b>{item.word}</b>
             </a>
           </div>
