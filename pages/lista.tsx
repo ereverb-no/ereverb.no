@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import words from '../public/words.json'
 
 const Index = () => (
   <div>
@@ -14,23 +15,16 @@ const Index = () => (
         Her er lista over -ere-verb vi har samlet inn så langt:
       </p>
 
-      <div className='row'>
-        <a href='https://ordbok.uib.no/perl/ordbok.cgi?OPP=administrere&ant_bokmaal=5&ant_nynorsk=5&begge=+&ordbok=begge' className='card'>
-          <b>Administrere</b>
-        </a>
+      <div>
+        {words.map(item =>
+          <div className='row'>
+            <a href='https://ordbok.uib.no/perl/ordbok.cgi?OPP=administrere' className='card'>
+              <b>{item.word}</b>
+            </a>
+          </div>
+        )}
       </div>
 
-      <div className='row'>
-        <a href='https://ordbok.uib.no/perl/ordbok.cgi?OPP=organisere&ant_bokmaal=5&ant_nynorsk=5&begge=+&ordbok=begge' className='card'>
-          <b>Organisere</b>
-        </a>
-      </div>
-
-      <div className='row'>
-        <a href='https://ordbok.uib.no/perl/ordbok.cgi?OPP=reparere&ant_bokmaal=5&ant_nynorsk=5&begge=+&ordbok=begge' className='card'>
-          <b>Reparere</b>
-        </a>
-      </div>
     </div>
 
     <style jsx>{`
