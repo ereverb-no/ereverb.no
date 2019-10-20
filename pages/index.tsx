@@ -1,37 +1,30 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
 
-const Home = () => (
+const Index = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>Norske -ere-verb</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <Nav />
-
-    <div className='hero'>
-      <h1 className='title'>Welcome to Next.js!</h1>
+    <div>
+      <h1 className='title'>Velkommen til ereverb.no!</h1>
       <p className='description'>
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        Har du reparert noe i det siste?
       </p>
 
       <div className='row'>
-        <a href='https://nextjs.org/docs' className='card'>
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href='https://nextjs.org/learn' className='card'>
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
+        <a href='/lista' className='card'>
+          <h3>Lista &rarr;</h3>
+          <p>Se den fullstendige lista over -ere-verb.</p>
         </a>
         <a
-          href='https://github.com/zeit/next.js/tree/master/examples'
+          href='https://github.com/flyrev/ereverb.no'
           className='card'
         >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
+          <h3>Send inn ord &rarr;</h3>
+          <p>Har du et -ere-verb som ikke er med? Send en PR på GitHub.</p>
         </a>
       </div>
     </div>
@@ -44,7 +37,7 @@ const Home = () => (
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 40px;
         line-height: 1.15;
         font-size: 48px;
       }
@@ -85,4 +78,4 @@ const Home = () => (
   </div>
 )
 
-export default Home
+export default Index
