@@ -11,7 +11,7 @@ const Index = () => (
     <div>
       <h1 className='title'>Norske -ere-verb</h1>
       <p className='description'>
-        Her er lista over verb vi har samlet inn så langt:
+        Her er lista over -ere-verb vi har samlet inn så langt:
       </p>
 
       <div className='row'>
