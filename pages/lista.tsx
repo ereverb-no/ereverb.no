@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import words from '../public/words.json'
+import words from '../public/lista.json'
 
 const Index = () => (
   <div>
