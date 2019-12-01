@@ -20,11 +20,11 @@ const Index = () => (
           <p>Se den fullstendige lista over -ere-verb.</p>
         </a>
         <a
-          href='https://github.com/flyrev/ereverb.no'
+          href='https://github.com/flyrev/ereverb.no/issues/new?assignees=&labels=&template=nytt--ere-verb.md&title=Forslag+til+-ere-verb%3A+'
           className='card'
         >
           <h3>Send inn ord &rarr;</h3>
-          <p>Har du et -ere-verb som ikke er med? Send en PR på GitHub.</p>
+          <p>Har du et -ere-verb som ikke er med? Send oss et tips på GitHub, eller send det direkte på epost til flyrev@gmail.com. </p>
         </a>
       </div>
     </div>
